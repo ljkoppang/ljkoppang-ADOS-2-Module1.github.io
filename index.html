@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>ADOS - Module 1</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <div class="titlebox"> 
+        <h1>ADOS-2 RESULTS</h1>
+        <h2>Module 1 Algorithms</h2>
+      </div>
+
+    <div class="nameBox">
+      <label for="nameInput">Enter the child's Name in Years:</label>
+      <input type="text" id="nameInput">
+    </div>
+
+    <div class="ageBox">
+      <label for="ageInput">Enter the child's age (2 to 14):</label>
+      <input type="number" id="ageInput" name="ageInput" min="2" max="14">
+      <span id="ageError" class="error-msg"></span>
+    </div>
+
+   <div class="A1BtnBox">
+      <h3>A1: Non-Echoed Spoken Language</h3>
+      <div class="A1-btn-stack">
+        <button class="A1-btn" data-value="0">Few to No Words</button>
+        <button class="A1-btn" data-value="1">Some Words</button>
+      </div>
+   </div>
+
+    <main class="form-body">
+      <form class="combined-form">
+        <fieldset id="SA-form">
+          <legend>Social Affect (SA)</legend>
+          <!-- inputs -->
+        </fieldset>
+      </form>
+    </main>
+
+    <div class="SAtotBox">
+      <p id="SAtotal">    
+    </div>
+
+    <main class="form-body">
+      <form class="combined-form">
+        <fieldset id="RRB-form">
+          <legend>Restricted and Repetitive Behavior (RRB)</legend>
+          <!-- inputs -->
+        </fieldset>
+      </form>
+    </main>
+
+    <div class="RRBtotBox">
+      <p id="RRBtotal">    
+    </div>
+
+    <div class="OverallTotBox">
+      <p id="OverallTotal">    
+    </div>
+
+    <div class="comparisonBtnBox">
+      <h3>Submit Overall Score for ADOS-2 Comparison Score</h3>
+      <div>
+        <button class="comparison-btn" id="compScorebtn">Submit</button>
+      </div>
+        <h3 id=ADOScompScore></h3>	
+     </div>
+
+
+
+    <p id="currentTime"></p>
+
+    <script src="SAsectionsData.js"></script>
+    <script src="RRBsectionsData.js"></script>
+    <script src="comparisonScoreTbl.js"></script>
+    <script src="script.js"></script>
+
+  </body>
+</html>
